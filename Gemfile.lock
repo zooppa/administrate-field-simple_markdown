@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    administrate-field-simple_markdown (0.0.2)
+    administrate-field-simple_markdown (0.0.3)
       administrate (~> 0.4.0)
       rails (>= 4.2)
       redcarpet (~> 3.3)
