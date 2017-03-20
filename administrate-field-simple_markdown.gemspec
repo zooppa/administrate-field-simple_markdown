@@ -5,7 +5,7 @@ Gem::Specification.new do |gem|
   gem.version = '0.0.3'
   gem.authors = ['Michele Gerarduzzi']
   gem.email = ['michele.gerarduzzi@gmail.com']
-  gem.homepage = 'https://github.com/z-productions/administrate-field-simple_markdown'
+  gem.homepage = 'https://github.com/zooppa/administrate-field-simple_markdown'
   gem.summary = 'A plugin to edit Markdown text in Administrate'
   gem.description = gem.summary
   gem.license = 'MIT'
