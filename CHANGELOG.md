@@ -1,5 +1,14 @@
 # Changelog
 
+## [v0.1.0](https://github.com/zooppa/administrate-field-simple_markdown/tree/v0.1.0) (2018-01-23)
+
+[Full Changelog](https://github.com/zooppa/administrate-field-simple_markdown/compare/v0.0.4...v0.1.0)
+
+* Require Redcarpet
+* Add RSpec and tests
+* Handle null data
+* Update documentation
+
 ## [v0.0.4](https://github.com/zooppa/administrate-field-simple_markdown/tree/v0.0.4) (2017-04-03)
 
 [Full Changelog](https://github.com/zooppa/administrate-field-simple_markdown/compare/v0.0.3...v0.0.4)

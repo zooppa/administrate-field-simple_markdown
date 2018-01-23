@@ -11,7 +11,7 @@ A plugin to edit Markdown text in [Administrate] using [SimpleMDE] v1.11.2.
 Add it to your `Gemfile`:
 
 ```ruby
-gem 'administrate-field-simple_markdown', '~> 0.0.4'
+gem 'administrate-field-simple_markdown', '~> 0.1.0'
 ```
 
 Run:
