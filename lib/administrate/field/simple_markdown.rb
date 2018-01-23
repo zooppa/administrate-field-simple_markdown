@@ -1,5 +1,7 @@
+require 'rails'
 require 'administrate/field/text'
 require 'administrate/engine'
+require 'redcarpet'
 require 'redcarpet/render_strip'
 
 module Administrate
