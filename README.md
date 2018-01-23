@@ -27,12 +27,11 @@ ATTRIBUTE_TYPES = {
   bar: Field::SimpleMarkdown
 }.freeze
 ```
-The field will figure out the appropriate thousand separator and decimal delimiter for the unit.
 
 ## About
 
-Administrate::Field::SimpleMarkdown is maintained by [z.productions].
+Administrate::Field::SimpleMarkdown is maintained by [Zooppa].
 
-[Administrate]: https://github.com/thoughtbot/administrate
-[SimpleMDE]: https://github.com/NextStepWebs/simplemde-markdown-editor
-[z.productions]: https://www.z.productions/
+[administrate]: https://github.com/thoughtbot/administrate
+[simplemde]: https://github.com/NextStepWebs/simplemde-markdown-editor
+[zooppa]: https://www.zooppa.com/
