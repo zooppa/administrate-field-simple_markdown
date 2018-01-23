@@ -12,6 +12,10 @@ module Administrate
         Administrate::Engine.add_stylesheet 'administrate-field-simple_markdown/application'
       end
 
+      def data
+        @data || ''
+      end
+
       def to_html
         markdown(html_renderer).render(data).html_safe
       end
