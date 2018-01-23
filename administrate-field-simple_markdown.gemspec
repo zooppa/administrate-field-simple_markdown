@@ -6,8 +6,8 @@ Gem::Specification.new do |gem|
   gem.authors = ['Michele Gerarduzzi']
   gem.email = ['michele.gerarduzzi@gmail.com']
   gem.homepage = 'https://github.com/zooppa/administrate-field-simple_markdown'
-  gem.summary = 'A plugin to edit Markdown text in Administrate'
-  gem.description = gem.summary
+  gem.summary = 'Markdown editor for Administrate'
+  gem.description = 'A plugin to handle Markdown text in Administrate'
   gem.license = 'MIT'
 
   gem.require_paths = ['lib']
