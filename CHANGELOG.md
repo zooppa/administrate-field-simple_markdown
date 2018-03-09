@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.1.1](https://github.com/zooppa/administrate-field-simple_markdown/tree/v0.1.1) (2018-03-09)
+
+[Full Changelog](https://github.com/zooppa/administrate-field-simple_markdown/compare/v0.1.0...v0.1.1)
+
+* Restore list styles for Markdown elements (thanks @pedantic-git)
+
 ## [v0.1.0](https://github.com/zooppa/administrate-field-simple_markdown/tree/v0.1.0) (2018-01-23)
 
 [Full Changelog](https://github.com/zooppa/administrate-field-simple_markdown/compare/v0.0.4...v0.1.0)
