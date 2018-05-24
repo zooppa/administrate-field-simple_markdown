@@ -21,7 +21,7 @@ This partial renders a WYSIWYG text area to help writing Markdown text
   <script type="text/javascript">
     $(function() {
       new SimpleMDE({
-        element: document.getElementById('<%= f.object.class.name.downcase %>_<%= field.attribute %>')
+        element: document.getElementById('<%= f.object.class.name.underscore %>_<%= field.attribute %>')
       });
     });
   </script>
