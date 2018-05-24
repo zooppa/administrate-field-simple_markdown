@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.1.2](https://github.com/zooppa/administrate-field-simple_markdown/tree/v0.1.2) (2018-05-24)
+
+[Full Changelog](https://github.com/zooppa/administrate-field-simple_markdown/compare/v0.1.1...v0.1.2)
+
+* Use snakecase when generating ID (thanks @golmansax)
+
 ## [v0.1.1](https://github.com/zooppa/administrate-field-simple_markdown/tree/v0.1.1) (2018-03-09)
 
 [Full Changelog](https://github.com/zooppa/administrate-field-simple_markdown/compare/v0.1.0...v0.1.1)
