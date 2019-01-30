@@ -3,8 +3,8 @@ $:.push File.expand_path('../lib', __FILE__)
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-simple_markdown'
   gem.version = '0.1.2'
-  gem.authors = ['Michele Gerarduzzi']
-  gem.email = ['michele.gerarduzzi@gmail.com']
+  gem.authors = ['Zooppa']
+  gem.email = ['dev@zooppa.com']
   gem.homepage = 'https://github.com/zooppa/administrate-field-simple_markdown'
   gem.summary = 'Markdown editor for Administrate'
   gem.description = 'A plugin to handle Markdown text in Administrate'
