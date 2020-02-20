@@ -21,7 +21,7 @@ This partial renders a WYSIWYG text area to help writing Markdown text
   <script type="text/javascript">
     $(function() {
       new SimpleMDE({
-        element: document.getElementById('<%= f.object.class.name.parameterize.underscore %>_<%= field.attribute %>')
+        element: document.getElementById('<%= field.html_id %>')
       });
     });
   </script>
