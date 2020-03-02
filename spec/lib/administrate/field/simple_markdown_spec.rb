@@ -82,31 +82,4 @@ describe Administrate::Field::SimpleMarkdown do
       end
     end
   end
-
-  describe '#html_id' do
-    let(:data) { nil }
-    let(:output) { subject.html_id }
-  
-    context 'with a non-namespaced model' do
-      before { stub_const 'Foo', Class.new} 
-      
-      let(:resource) { Foo.new }
-      
-      it 'returns the expected HTML id' do
-        allow(subject).to receive(:resource).and_return(resource)
-        expect(output).to eq 'foo_simple_markdown'
-      end
-    end
-    
-    context 'with a namespaced model' do
-      before { stub_const 'Foo::Bar', Class.new} 
-      
-      let(:resource) { Foo::Bar.new }
-      
-      it 'returns the expected HTML id' do
-        allow(subject).to receive(:resource).and_return(resource)
-        expect(output).to eq 'foo_bar_simple_markdown'
-      end
-    end
-  end
 end

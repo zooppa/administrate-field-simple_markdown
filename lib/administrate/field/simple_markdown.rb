@@ -24,13 +24,6 @@ module Administrate
         markdown(plaintext_renderer).render(data)
       end
 
-      def html_id
-        [
-          resource.class.name.underscore.gsub('/', '_'),
-          attribute
-        ].join('_')
-      end
-
       private
 
       def html_renderer
