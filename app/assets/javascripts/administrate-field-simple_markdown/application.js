@@ -1,29 +1,34 @@
 //= require simplemde.min
 
-// Initialize SimpleMDE on existing elements
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', setup);
+document.addEventListener('turbolinks:load', setup);
+
+function setup() {
   initSimpleMDE(document);
-});
-
-// Observe nested object form for new elements to initialize
-const target = document.querySelector(".field-unit--nested");
-const observer = new MutationObserver(callback);
-observer.observe(target, { childList: true });
-
-function callback(mutations) {
-  for (let mutation of mutations) {
-    if (mutation.addedNodes.length) {
-      mutation.addedNodes.forEach(function(node) {
-        initSimpleMDE(node);
-      });
-    }
-  }
+  initObserver(document.querySelector('.field-unit--nested'));
 }
 
 function initSimpleMDE(element) {
   if (!element) return;
 
-  element.querySelectorAll("[data-simplemde]").forEach(function(el) {
+  element.querySelectorAll('[data-simplemde="false"]').forEach(function(el) {
     new SimpleMDE({ element: el });
+    el.setAttribute('data-simplemde', true);
   });
+}
+
+function initObserver(element) {
+  if (!element) return;
+
+  const observer = new MutationObserver(function (mutations) {
+    for (let mutation of mutations) {
+      if (mutation.addedNodes.length) {
+        mutation.addedNodes.forEach(function(node) {
+          initSimpleMDE(node);
+        });
+      }
+    }
+  });
+
+  observer.observe(element, { childList: true });
 }
