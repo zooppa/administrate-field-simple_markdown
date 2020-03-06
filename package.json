@@ -1,0 +1,12 @@
+{
+  "name": "administrate-field-simple_markdown",
+  "version": "0.2.0",
+  "description": "A plugin to edit Markdown text in Administrate",
+  "main": "index.js",
+  "repository": "git@github.com:zooppa/administrate-field-simple_markdown.git",
+  "author": "Kaspar Vollenweider <vok@panter.ch>",
+  "license": "MIT",
+  "dependencies": {
+    "simplemde": "^1.11.2"
+  }
+}
