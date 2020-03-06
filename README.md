@@ -25,7 +25,19 @@ Add to your `FooDashboard`:
 
 ```ruby
 ATTRIBUTE_TYPES = {
-  bar: Field::SimpleMarkdown
+  bar: Field::SimpleMarkdown.with_options({
+    safe_links_only: true,
+    filter_html: true,
+    with_toc_data: true,
+    hard_wrap: true,
+    link_attributes: { rel: 'follow' },
+    autolink: true,
+    tables: true,
+    no_intra_emphasis: true,
+    strikethrough: true,
+    highlight: true,
+    space_after_headers: true
+  })
 }.freeze
 ```
 
