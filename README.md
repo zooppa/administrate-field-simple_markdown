@@ -36,5 +36,5 @@ Administrate::Field::SimpleMarkdown is maintained by [Zooppa].
 See also the list of [contributors](https://github.com/zooppa/administrate-field-simple_markdown/contributors) who participated in this project.
 
 [administrate]: https://github.com/thoughtbot/administrate
-[simplemde]: https://github.com/NextStepWebs/simplemde-markdown-editor
+[simplemde]: https://github.com/sparksuite/simplemde-markdown-editor
 [zooppa]: https://www.zooppa.com/
