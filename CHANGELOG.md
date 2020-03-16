@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.3.0](https://github.com/zooppa/administrate-field-simple_markdown/tree/v0.3.0) (2020-03-16)
+
+[Full Changelog](https://github.com/zooppa/administrate-field-simple_markdown/compare/v0.2.1...v0.3.0)
+
+* Support namespaced models and injected fields (thanks @sedubois)
+* Add support for Redcarpet options (thanks @casaper)
+
+
 ## [v0.2.1](https://github.com/zooppa/administrate-field-simple_markdown/tree/v0.2.1) (2019-01-15)
 
 [Full Changelog](https://github.com/zooppa/administrate-field-simple_markdown/compare/v0.2.0...v0.2.1)
