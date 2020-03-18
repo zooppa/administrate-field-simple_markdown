@@ -5,7 +5,7 @@ document.addEventListener('turbolinks:load', setup);
 
 function setup() {
   initSimpleMDE(document);
-  initObserver(document.querySelector('.field-unit--nested'));
+  initObserver(document.querySelector('.simple_markdown'));
 }
 
 function initSimpleMDE(element) {
