@@ -16,6 +16,10 @@ module Administrate
         @data || ''
       end
 
+      def hide_icons
+        options.fetch(:hide_icons, []).to_s
+      end
+
       def to_html
         markdown(html_renderer).render(data).html_safe
       end

@@ -12,7 +12,8 @@ function initSimpleMDE(element) {
   if (!element) return;
 
   element.querySelectorAll('[data-simplemde="false"]').forEach(function(el) {
-    new SimpleMDE({ element: el });
+    var hideIcons = el.getAttribute('data-hide-icons');
+    new SimpleMDE({ element: el, hideIcons: hideIcons });
     el.setAttribute('data-simplemde', true);
   });
 }
