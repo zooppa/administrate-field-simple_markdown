@@ -36,10 +36,17 @@ ATTRIBUTE_TYPES = {
     no_intra_emphasis: true,
     strikethrough: true,
     highlight: true,
-    space_after_headers: true
+    space_after_headers: true,
+    simplemde_options: {
+      placeholder: 'Enter your content here',
+      spell_checker: false,
+      hide_icons: %w[image quote heading]
+    }
   })
 }.freeze
 ```
+
+You can customize your editor toolbar config the `simplemde_options` value. For more options check [here](https://github.com/sparksuite/simplemde-markdown-editor)
 
 ## About
 
