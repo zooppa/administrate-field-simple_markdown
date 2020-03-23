@@ -5,7 +5,6 @@ require 'administrate/field/text'
 require 'administrate/engine'
 require 'redcarpet'
 require 'redcarpet/render_strip'
-require 'byebug'
 
 module Administrate
   module Field
