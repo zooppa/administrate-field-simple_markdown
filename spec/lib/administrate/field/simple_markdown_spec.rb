@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe Administrate::Field::SimpleMarkdown do
@@ -30,21 +32,29 @@ describe Administrate::Field::SimpleMarkdown do
     end
   end
 
-  describe '#hide_icons' do
-    let(:output) { subject.hide_icons }
+  describe '#simplemde_options' do
+    let(:output) { subject.simplemde_options }
     let(:data) { text }
 
     context 'with nil' do
-      it 'returns an empty array' do
-        expect(output).to eq "[]"
+      it 'returns an empty hash' do
+        expect(output).to eq({})
       end
     end
 
-    context 'with a valid option' do
-      let(:options) { { hide_icons: ['foo', 'bar'] } }
+    context 'with a valid options' do
+      let(:options) do
+        { simplemde_options:
+          {
+            foo_bar: 'foobar',
+            bar_foo: %w[bar foo]
+          } }
+      end
 
-      it 'returns the data' do
-        expect(output).to eq '["foo", "bar"]'
+      it 'returns the options into a hash' do
+        expect(output).to eq(
+          'barFoo' => %w[bar foo], 'fooBar' => 'foobar'
+        )
       end
     end
   end
