@@ -20,6 +20,11 @@ module Administrate
         options.fetch(:hide_icons, []).to_s
       end
 
+      def simplemde_options
+        options.fetch(:simplemde_options, {})
+               .transform_keys { |k| k.to_s.camelize(:lower) }
+      end
+
       def to_html
         markdown(html_renderer).render(data).html_safe
       end
