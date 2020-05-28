@@ -30,21 +30,28 @@ describe Administrate::Field::SimpleMarkdown do
     end
   end
 
-  describe '#hide_icons' do
-    let(:output) { subject.hide_icons }
+  describe '#easymde_options' do
+    let(:output) { subject.easymde_options }
     let(:data) { text }
 
     context 'with nil' do
-      it 'returns an empty array' do
-        expect(output).to eq "[]"
+      it 'returns an empty hash' do
+        expect(output).to eq "{}"
       end
     end
 
-    context 'with a valid option' do
-      let(:options) { { hide_icons: ['foo', 'bar'] } }
+    context 'with valid options' do
+      let(:options) do
+        {
+          easymde_options: {
+            placeholder: 'Type here...',
+            hide_icons: ['foo', 'bar']
+          }
+        }
+      end
 
       it 'returns the data' do
-        expect(output).to eq '["foo", "bar"]'
+        expect(output).to eq '{"placeholder":"Type here...","hideIcons":["foo","bar"]}'
       end
     end
   end
