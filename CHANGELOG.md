@@ -1,5 +1,13 @@
 # Changelog
 
+## [v0.4.0](https://github.com/zooppa/administrate-field-simple_markdown/tree/v0.4.0) (2020-05-28)
+
+[Full Changelog](https://github.com/zooppa/administrate-field-simple_markdown/compare/v0.3.0...v0.4.0)
+
+- Revert initialization logic to HTML ID. This won’t be compatible with other
+  Administrate plugin (e.g. Administrate::Field::NestedHasMany)
+- Switch to EasyMDE (thanks @casaper)
+
 ## [v0.3.0](https://github.com/zooppa/administrate-field-simple_markdown/tree/v0.3.0) (2020-03-16)
 
 [Full Changelog](https://github.com/zooppa/administrate-field-simple_markdown/compare/v0.2.1...v0.3.0)
