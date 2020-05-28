@@ -15,5 +15,14 @@ This partial renders a WYSIWYG text area to help writing Markdown text
   <%= f.label field.attribute %>
 </div>
 <div class="field-unit__field simple_markdown">
-  <%= f.text_area field.attribute, data: { simplemde: false } %>
+  <%= f.text_area field.attribute %>
 </div>
+<%= content_for :javascript do %>
+  <script type="text/javascript">
+    $(function() {
+      new SimpleMDE({
+        element: document.getElementById('<%= field.html_id %>')
+      });
+    });
+  </script>
+<% end %>
