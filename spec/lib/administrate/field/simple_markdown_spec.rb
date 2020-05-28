@@ -1,11 +1,14 @@
 require 'spec_helper'
 
 describe Administrate::Field::SimpleMarkdown do
-  subject { Administrate::Field::SimpleMarkdown.new(:simple_markdown, data, :show) }
+  subject { described_class.new(:simple_markdown, data, :show) }
 
   let(:md) { '**foo** is the new _bar_' }
   let(:text) { 'foo is the new bar' }
   let(:html) { '<p><strong>foo</strong> is the new <em>bar</em></p>' }
+  let(:options) { {} }
+
+  before { allow(subject).to receive(:options).and_return(options) }
 
   describe '#data' do
     let(:output) { subject.data }
@@ -23,6 +26,32 @@ describe Administrate::Field::SimpleMarkdown do
 
       it 'returns the data' do
         expect(output).to eq text
+      end
+    end
+  end
+
+  describe '#easymde_options' do
+    let(:output) { subject.easymde_options }
+    let(:data) { text }
+
+    context 'with nil' do
+      it 'returns an empty hash' do
+        expect(output).to eq "{}"
+      end
+    end
+
+    context 'with valid options' do
+      let(:options) do
+        {
+          easymde_options: {
+            placeholder: 'Type here...',
+            hide_icons: ['foo', 'bar']
+          }
+        }
+      end
+
+      it 'returns the data' do
+        expect(output).to eq '{"placeholder":"Type here...","hideIcons":["foo","bar"]}'
       end
     end
   end

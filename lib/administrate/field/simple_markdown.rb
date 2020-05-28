@@ -16,6 +16,12 @@ module Administrate
         @data || ''
       end
 
+      def easymde_options
+        options.fetch(:easymde_options, {})
+          .transform_keys { |key| key.to_s.camelize(:lower) }
+          .to_json
+      end
+
       def to_html
         markdown(html_renderer).render(data).html_safe
       end

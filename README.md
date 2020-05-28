@@ -46,10 +46,18 @@ ATTRIBUTE_TYPES = {
     no_intra_emphasis: true,
     strikethrough: true,
     highlight: true,
-    space_after_headers: true
+    space_after_headers: true,
+    easymde_options: {
+      placeholder: 'Type here...',
+      spell_checker: false,
+      hide_icons: %w[guide heading]
+    }
   })
 }.freeze
 ```
+
+You can pass EasyMDE a configuration object via the `easymde_options` option.
+Check the [full list of available options](https://github.com/Ionaru/easy-markdown-editor#options-list).
 
 ## About
 

@@ -15,14 +15,19 @@ This partial renders a WYSIWYG text area to help writing Markdown text
   <%= f.label field.attribute %>
 </div>
 <div class="field-unit__field simple_markdown">
-  <%= f.text_area field.attribute %>
+  <%= f.text_area field.attribute,
+    data: {
+      easymde_options: field.easymde_options
+    }
+  %>
 </div>
 <%= content_for :javascript do %>
   <script type="text/javascript">
     $(function() {
-      new EasyMDE({
-        element: document.getElementById('<%= field.html_id %>')
-      });
+      var el = document.getElementById('<%= field.html_id %>')
+      var options = JSON.parse(el.getAttribute('data-easymde-options'));
+
+      new EasyMDE(Object.assign({}, { element: el }, options));
     });
   </script>
 <% end %>
