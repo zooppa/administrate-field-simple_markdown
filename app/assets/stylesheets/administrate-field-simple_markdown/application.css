@@ -1,9 +1,14 @@
 /*
  *= require_self
- *= require simplemde.min
+ *= require easymde.min
  */
 
-.simple_markdown ul, .simple_markdown ol {
+.simple_markdown .editor-toolbar button {
+  color: initial;
+}
+
+.simple_markdown ul,
+.simple_markdown ol {
   margin: 0.5em 0;
   padding-left: 2em;
 }
