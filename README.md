@@ -22,7 +22,7 @@ If you’re interested in taking over and steward the project moving forward, pl
 Add it to your `Gemfile`:
 
 ```ruby
-gem 'administrate-field-simple_markdown', '~> 0.4.0'
+gem 'administrate-field-simple_markdown', '~> 0.5.0'
 ```
 
 Run:

@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.5.0](https://github.com/zooppa/administrate-field-simple_markdown/tree/v0.5.0) (2020-05-28)
+
+[Full Changelog](https://github.com/zooppa/administrate-field-simple_markdown/compare/v0.4.0...v0.5.0)
+
+- Add support for full EasyMDE configuration (thanks @hernanvicente)
+
 ## [v0.4.0](https://github.com/zooppa/administrate-field-simple_markdown/tree/v0.4.0) (2020-05-28)
 
 [Full Changelog](https://github.com/zooppa/administrate-field-simple_markdown/compare/v0.3.0...v0.4.0)
