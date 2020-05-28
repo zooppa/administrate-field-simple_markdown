@@ -20,7 +20,7 @@ This partial renders a WYSIWYG text area to help writing Markdown text
 <%= content_for :javascript do %>
   <script type="text/javascript">
     $(function() {
-      new SimpleMDE({
+      new EasyMDE({
         element: document.getElementById('<%= field.html_id %>')
       });
     });

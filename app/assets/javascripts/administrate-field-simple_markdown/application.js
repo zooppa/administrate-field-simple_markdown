@@ -1,1 +1,1 @@
-//= require simplemde.min
+//= require easymde.min
