@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.6.0](https://github.com/zooppa/administrate-field-simple_markdown/tree/v0.6.0) (2020-07-01)
+
+[Full Changelog](https://github.com/zooppa/administrate-field-simple_markdown/compare/v0.5.0...v0.6.0)
+
+- Support nonce for Content Security Policy (thanks @parterburn)
+
 ## [v0.5.0](https://github.com/zooppa/administrate-field-simple_markdown/tree/v0.5.0) (2020-05-28)
 
 [Full Changelog](https://github.com/zooppa/administrate-field-simple_markdown/compare/v0.4.0...v0.5.0)
