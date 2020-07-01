@@ -22,12 +22,12 @@ This partial renders a WYSIWYG text area to help writing Markdown text
   %>
 </div>
 <%= content_for :javascript do %>
-  <script type="text/javascript">
+  <%= javascript_tag nonce: true do %>
     $(function() {
       var el = document.getElementById('<%= field.html_id %>')
       var options = JSON.parse(el.getAttribute('data-easymde-options'));
 
       new EasyMDE(Object.assign({}, { element: el }, options));
     });
-  </script>
+  <%- end %>
 <% end %>
