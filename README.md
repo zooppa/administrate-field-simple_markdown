@@ -1,6 +1,6 @@
 # Administrate::Field::SimpleMarkdown
 
-[![Build Status](https://travis-ci.com/zooppa/administrate-field-simple_markdown.svg?branch=master)](https://travis-ci.com/zooppa/administrate-field-simple_markdown)
+[![Build status](https://github.com/zooppa/administrate-field-simple_markdown/actions/workflows/build.yml/badge.svg)](https://github.com/zooppa/administrate-field-simple_markdown/actions/workflows/build.yml)
 [![Code Climate](https://codeclimate.com/github/zooppa/administrate-field-simple_markdown/badges/gpa.svg)](https://codeclimate.com/github/zooppa/administrate-field-simple_markdown)
 
 A plugin to edit Markdown text in [Administrate] using [EasyMDE].
