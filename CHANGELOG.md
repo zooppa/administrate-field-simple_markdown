@@ -1,5 +1,11 @@
 # Changelog
 
+## [v0.7.0](https://github.com/zooppa/administrate-field-simple_markdown/tree/v0.7.0) (2020-01-06)
+
+[Full Changelog](https://github.com/zooppa/administrate-field-simple_markdown/compare/v0.6.0...v0.7.0)
+
+- Add support for Rails 7 (thanks @neumayr)
+
 ## [v0.6.0](https://github.com/zooppa/administrate-field-simple_markdown/tree/v0.6.0) (2020-07-01)
 
 [Full Changelog](https://github.com/zooppa/administrate-field-simple_markdown/compare/v0.5.0...v0.6.0)
