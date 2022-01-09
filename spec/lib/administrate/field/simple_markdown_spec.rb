@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe Administrate::Field::SimpleMarkdown do
@@ -36,7 +38,7 @@ describe Administrate::Field::SimpleMarkdown do
 
     context 'with nil' do
       it 'returns an empty hash' do
-        expect(output).to eq "{}"
+        expect(output).to eq '{}'
       end
     end
 
@@ -45,7 +47,7 @@ describe Administrate::Field::SimpleMarkdown do
         {
           easymde_options: {
             placeholder: 'Type here...',
-            hide_icons: ['foo', 'bar']
+            hide_icons: %w[foo bar]
           }
         }
       end
@@ -115,23 +117,23 @@ describe Administrate::Field::SimpleMarkdown do
   describe '#html_id' do
     let(:data) { nil }
     let(:output) { subject.html_id }
-  
+
     context 'with a non-namespaced model' do
-      before { stub_const 'Foo', Class.new} 
-      
+      before { stub_const 'Foo', Class.new }
+
       let(:resource) { Foo.new }
-      
+
       it 'returns the expected HTML id' do
         allow(subject).to receive(:resource).and_return(resource)
         expect(output).to eq 'foo_simple_markdown'
       end
     end
-    
+
     context 'with a namespaced model' do
-      before { stub_const 'Foo::Bar', Class.new} 
-      
+      before { stub_const 'Foo::Bar', Class.new }
+
       let(:resource) { Foo::Bar.new }
-      
+
       it 'returns the expected HTML id' do
         allow(subject).to receive(:resource).and_return(resource)
         expect(output).to eq 'foo_bar_simple_markdown'

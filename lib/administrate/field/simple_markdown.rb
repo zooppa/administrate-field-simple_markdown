@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails'
 require 'administrate/field/text'
 require 'administrate/engine'
@@ -18,8 +20,8 @@ module Administrate
 
       def easymde_options
         options.fetch(:easymde_options, {})
-          .transform_keys { |key| key.to_s.camelize(:lower) }
-          .to_json
+               .transform_keys { |key| key.to_s.camelize(:lower) }
+               .to_json
       end
 
       def to_html
@@ -41,12 +43,13 @@ module Administrate
 
       def html_renderer
         @html_renderer ||= Redcarpet::Render::HTML.new({
-          safe_links_only: options.fetch(:safe_links_only, true),
-          filter_html: options.fetch(:filter_html, true),
-          with_toc_data: options.fetch(:with_toc_data, true),
-          hard_wrap: options.fetch(:hard_wrap, true),
-          link_attributes: options.fetch(:link_attributes, { rel: 'nofollow' })
-        })
+                                                         safe_links_only: options.fetch(:safe_links_only, true),
+                                                         filter_html: options.fetch(:filter_html, true),
+                                                         with_toc_data: options.fetch(:with_toc_data, true),
+                                                         hard_wrap: options.fetch(:hard_wrap, true),
+                                                         link_attributes: options.fetch(:link_attributes,
+                                                                                        { rel: 'nofollow' })
+                                                       })
       end
 
       def plaintext_renderer
@@ -55,13 +58,13 @@ module Administrate
 
       def markdown(renderer)
         @markdown ||= Redcarpet::Markdown.new(renderer, {
-          autolink: options.fetch(:autolink, true),
-          tables: options.fetch(:tables, true),
-          no_intra_emphasis: options.fetch(:no_intra_emphasis, true),
-          strikethrough: options.fetch(:strikethrough, true),
-          highlight: options.fetch(:highlight, true),
-          space_after_headers: options.fetch(:space_after_headers, true)
-        })
+                                                autolink: options.fetch(:autolink, true),
+                                                tables: options.fetch(:tables, true),
+                                                no_intra_emphasis: options.fetch(:no_intra_emphasis, true),
+                                                strikethrough: options.fetch(:strikethrough, true),
+                                                highlight: options.fetch(:highlight, true),
+                                                space_after_headers: options.fetch(:space_after_headers, true)
+                                              })
       end
     end
   end
