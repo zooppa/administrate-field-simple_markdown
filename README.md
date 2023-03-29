@@ -1,11 +1,7 @@
 # Administrate::Field::SimpleMarkdown
 
-[![Build status](https://github.com/zooppa/administrate-field-simple_markdown/actions/workflows/build.yml/badge.svg)](https://github.com/zooppa/administrate-field-simple_markdown/actions/workflows/build.yml)
+[![No Maintenance Intended](https://unmaintained.tech/badge.svg)](https://unmaintained.tech/) [![Build status](https://github.com/zooppa/administrate-field-simple_markdown/actions/workflows/build.yml/badge.svg)](https://github.com/zooppa/administrate-field-simple_markdown/actions/workflows/build.yml)
 [![Code Climate](https://codeclimate.com/github/zooppa/administrate-field-simple_markdown/badges/gpa.svg)](https://codeclimate.com/github/zooppa/administrate-field-simple_markdown)
-
-A plugin to edit Markdown text in [Administrate] using [EasyMDE].
-
-![Demo](https://raw.githubusercontent.com/zooppa/administrate-field-simple_markdown/master/demo.gif)
 
 ---
 
@@ -16,6 +12,10 @@ A plugin to edit Markdown text in [Administrate] using [EasyMDE].
 If you’re interested in taking over and steward the project moving forward, please get in touch.
 
 ---
+
+A plugin to edit Markdown text in [Administrate] using [EasyMDE].
+
+![Demo](https://raw.githubusercontent.com/zooppa/administrate-field-simple_markdown/master/demo.gif)
 
 ## Usage
 
